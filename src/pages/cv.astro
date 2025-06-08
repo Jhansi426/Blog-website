@@ -1,0 +1,143 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <!-- Profile Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+  <div class="mb-10 text-justify">
+    A passionate and driven Electronics and Communication Engineering undergraduate with a strong interest in Embedded Systems, VLSI, and IoT applications. Committed to giving my best to every project I undertake, with the goal of making meaningful and impactful contributions.
+  </div>
+
+  <!-- Education Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Bachelor of Technology in Electronics and Communication"
+      subtitle="2022 to Present at Amrita Vishwa Vidyapeetham, Amritapuri, India (CGPA: 8.14)"
+    />
+    <TimeLineElement
+      title="Intermediate (MPC)"
+      subtitle="2020 to 2022 at Narayana Junior College, Visakhapatnam, Andhra Pradesh (94.8%)"
+    />
+    <TimeLineElement
+      title="10th Class Board of Secondary Education"
+      subtitle="2020 at Sri Chaitanya High School, Vizianagaram, Andhra Pradesh (Score: 593/600)"
+    />
+  </div>
+
+  <!-- Experience Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Student Intern at Humanitarian Technologies Labs (HuT Labs)"
+      subtitle="2023 to Present at Amritapuri, India"
+    >
+      Working on impactful, real-world projects that benefit large communities, focusing on embedded systems and robotics.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Chair, IEEE Women in Engineering (WIE), Student Branch"
+      subtitle="2024 to Present at Amritapuri, India"
+    >
+      Lead initiatives to empower women in engineering through events, outreach, and technical activities, promoting leadership and diversity in STEM.
+    </TimeLineElement>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Projects</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <strong>Smart Medicine Reminder with Heartbeat Detection and RTC Alarm System:</strong> Monitors heartbeat and sets alarms for timely medication intake using RTC.
+    </li>
+    <li>
+      <strong>Smart Irrigation System with MQTT:</strong> Uses Arduino and sensors to automate watering based on soil moisture with MQTT for real-time control.
+    </li>
+    <li>
+      <strong>Image Processing using MATLAB:</strong> Extracted image features like edges, Harris corners, face detection, and frequency components.
+    </li>
+    <li>
+      <strong>Soft Sound Detection Circuit:</strong> Used LM741 to capture and respond to low-frequency sound signals for smart surveillance.
+    </li>
+  </ul>
+
+  <!-- Certifications & Workshops Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Workshops</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>ARISE 2024 — AI Research and Innovation Skill Enhancement by Wefaa Robotics</li>
+    <li>AI and Healthcare 2024 — Conducted by Humanitarian Labs</li>
+    <li>ROSBot 2023 — Workshop by Humanitarian Labs</li>
+  </ul>
+
+  <!-- Achievements Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Achievements</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <strong>IDC Robocon 2024:</strong> Participated in international robotics competition. Played a crucial role in robot design, construction, and operation.
+    </li>
+  </ul>
+
+  <!-- Skills Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-2 gap-6 mx-6">
+    <div>
+      <h4 class="font-semibold">Technical Skills</h4>
+      <ul class="list-disc ml-5">
+        <li>Python</li>
+        <li>C</li>
+        <li>Arduino IDE</li>
+        <li>ARM-KEIL</li>
+        <li>Verilog HDL</li>
+        <li>ModelSim</li>
+        <li>MATLAB</li>
+        <li>LT-SPICE</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold">Soft Skills</h4>
+      <ul class="list-disc ml-5">
+        <li>Inquisitive</li>
+        <li>Leadership</li>
+        <li>Team Player</li>
+        <li>Problem Solving</li>
+        <li>Time Management</li>
+        <li>Adaptive</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Community Outreach -->
+  <div class="mb-5 mt-10">
+    <div class="text-3xl w-full font-bold">Community Outreach</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <strong>Student Social Responsibility (SSR):</strong> Led a women empowerment project with workshops to build self-reliance.
+    </li>
+    <li>
+      <strong>AmritaSREE Self Help Groups:</strong> Volunteered in distributing essential provisions including food and clothing.
+    </li>
+  </ul>
+
+  <!-- Languages -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Languages</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10">
+    <li>Telugu, English, Hindi — Read, Write, Speak, Understand</li>
+  </ul>
+</BaseLayout>
