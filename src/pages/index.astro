@@ -10,7 +10,7 @@ const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
+  <!-- <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
     <div class="text-5xl font-bold">I'm Jhansi Paluri</div>
     <div class="text-3xl py-3 font-bold">ECE Undergrad</div>
@@ -24,7 +24,7 @@ the goal of making meaningful and impactful contributions
     <div class="mt-8">
       <a class="btn" href="https://linkedin.com/in/jhansi-paluri-636092286" target="_blank"> Let's connect!</a>
     </div>
-  </div>
+  </div> -->
 
   <div>
     <div class="text-3xl w-full font-bold mb-2">My projects {"</>"}</div>
@@ -38,7 +38,29 @@ the goal of making meaningful and impactful contributions
   badge="NEW"
 />
 
-  <div class="divider my-0"></div>
+ <div class="divider my-0"></div>
+  <HorizontalCard
+  title="NETWORK TOPOLOGIES SIMULATION USING CISCO PACKET TRACER"
+  img="/bus.png"
+  desc="A comprehensive simulation of fundamental network topologies including Bus, Ring, Star, Mesh, and Tree using Cisco Packet Tracer. This project showcases network layout principles with an assigned IP range, emphasizing connectivity and practical understanding."
+  url="/blog/network-topologies-simulation-using-cisco-packet-tracer"
+  badge="TOPOLOGY"
+/>
+ 
+
+ <div class="divider my-0"></div>
+<HorizontalCard
+  title="INTERCONNECTING LAN TOPOLOGIES VIA ROUTER"
+  img="/over.png"
+  desc="Simulation of three different LANs—Star, Ring, and Tree—connected using a single router in Cisco Packet Tracer. Demonstrates IP subnetting, routing configuration, and inter-network communication."
+  url="/blog/three-network-topologies-simulation-using-cisco-packet-tracer"
+  badge="Router-Based Topologies"
+  tags={["packet-tracer", "networking", "topologies", "router"]}
+/>
+
+
+
+
   <!-- <HorizontalCard
     title="Demo Project 2"
     img="/post_img.webp"
@@ -46,6 +68,7 @@ the goal of making meaningful and impactful contributions
     url="#"
   />
   <div class="divider my-0"></div>
+  
   <HorizontalCard
     title="Demo Project 3"
     img="/post_img.webp"
